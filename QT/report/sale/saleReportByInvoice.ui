@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>saleReportByInvoiceWindow</class>
+ <widget class="QMainWindow" name="saleReportByInvoiceWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1365</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sale Report By Invoice</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="saleGB">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>0</y>
+      <width>1360</width>
+      <height>685</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Sale Report </string>
+    </property>
+    <widget class="QTableWidget" name="tbl_saleReportByInvoice">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>1340</width>
+       <height>535</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <property name="gridStyle">
+      <enum>Qt::SolidLine</enum>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="rowCount">
+      <number>16</number>
+     </property>
+     <property name="columnCount">
+      <number>7</number>
+     </property>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+    </widget>
+    <widget class="QGroupBox" name="filterGB">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>95</y>
+       <width>1341</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Filter</string>
+     </property>
+     <widget class="QLineEdit" name="le_filterByCompany">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter BY Company</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_filterByQuantity">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>20</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter BY Quantity</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_filterByProduct">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>20</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter BY Product</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_filterByRemarks">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>20</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter BY Remarks</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_filterByDiscount">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>20</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter BY Discount</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_filterByPrice">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>20</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter BY Sale Price</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_filterByTotalPrice">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>20</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter BY Total Amount</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="searchGB">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>1341</width>
+       <height>75</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Search Invoice</string>
+     </property>
+     <widget class="QLineEdit" name="le_searchByInvoice">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Invoice</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>61</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Search :</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_serach">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>40</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_totalSale">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>40</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Total Sale</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_itemDiscount">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>40</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Discount On Item</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_refresh">
+      <property name="geometry">
+       <rect>
+        <x>1235</x>
+        <y>40</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_print">
+      <property name="geometry">
+       <rect>
+        <x>1235</x>
+        <y>10</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Print</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>40</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Item Discount</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>40</y>
+        <width>71</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Net Sale</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>40</y>
+        <width>71</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Total Sale</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_netSale">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>40</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Total Sale</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_totalDiscount">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>40</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Discount Bill</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>40</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Total Discount</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>10</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Account Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_cnic">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>10</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>CNIC</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>10</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Father Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_name">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>10</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Account Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_mobile">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>10</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Mobile Number</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>10</y>
+        <width>51</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>CNIC</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>1070</x>
+        <y>10</y>
+        <width>61</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Mobile :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_fatherName">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>10</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Father Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>1070</x>
+        <y>40</y>
+        <width>61</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Balance:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>10</y>
+        <width>41</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Date</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_balance">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>1130</x>
+        <y>40</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Remining Balance</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_date">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>10</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Date</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

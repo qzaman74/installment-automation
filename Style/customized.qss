@@ -1,0 +1,90 @@
+
+/* --------------------- QMenuBar --------------------------------------- */
+QMenuBar {
+    padding: 2px;
+    background-color:#e6f7ff;
+}
+
+QMenuBar::item:pressed {
+    background-color: #99ddff;
+}
+
+QMenu {
+    background-color: #e6f7ff;
+    border: 1px solid #99ddff;
+}
+
+QMenu:item:selected {
+    background-color: #99ddff;
+    selection-color: #99ddff;
+    selection-background-color: #e6f7ff;
+}
+
+
+/* --------------------- QPushButton --------------------------------------- */
+
+QPushButton {
+    background:transparent;
+    border-radius: 5px;
+    border: 2px solid #99ddff;
+    color:#99ddff;
+    font-weight: bold;
+}
+
+/* -------------------------- QGroupBox ------------------------------------ */
+
+QGroupBox {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-weight: bold;
+}
+
+
+/* ---------------------------- QLine -------------------------------------- */
+
+QLineEdit {
+    background-color: rgba(230, 247, 255, 0.6);
+    border: 1px solid #99ddff;
+}
+
+QLineEdit:hover{
+    border: 1.5px solid #99ddff;
+}
+
+QLineEdit:selected{
+    background-color: #99ddff;
+    color: #31363B;
+}
+
+/* ----------------------- QCombobox --------------------------------------- */
+
+QComboBox {
+    background-color: rgba(230, 247, 255, 0.6);
+    border: 1px solid #99ddff;
+}
+
+QComboBox:hover{
+    border: 1.5px solid #99ddff;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #e6f7ff;
+    border-radius: 4px;
+    border: 1px solid #99ddff;
+    selection-color: #99ddff;
+    selection-background-color: #e6f7ff;
+}
+
+
+/* -------------------------- QTableWidget ------------------------------------ */
+
+QTableWidget {
+    background-color: rgba(230, 247, 255, 0.2);
+    border: 5px solid #e6f7ff;
+}
+
+QHeaderView::section{
+    font
+    background-color: rgba(230, 247, 255, 0.2);
+    border: 1px solid #e6f7ff;
+    font-weight: bold;
+}

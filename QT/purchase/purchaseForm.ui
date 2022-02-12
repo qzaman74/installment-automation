@@ -1,0 +1,1526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>purchaseWindow</class>
+ <widget class="QMainWindow" name="purchaseWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1365</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Purchase Window</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="addPurchaseGB">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>281</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="title">
+     <string>Add Purchase</string>
+    </property>
+    <widget class="QPushButton" name="btn_date">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>15</y>
+       <width>30</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_date">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>15</y>
+       <width>150</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_account">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>70</y>
+       <width>180</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_invoice">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>98</y>
+       <width>180</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>32</number>
+     </property>
+     <property name="placeholderText">
+      <string>Bill Number</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_company">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>147</y>
+       <width>150</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_engine">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>205</y>
+       <width>180</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>32</number>
+     </property>
+     <property name="placeholderText">
+      <string>Engine Number</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_chassis">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>232</y>
+       <width>180</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>32</number>
+     </property>
+     <property name="placeholderText">
+      <string>Chassis Number</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_costPrice">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>288</y>
+       <width>180</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>32</number>
+     </property>
+     <property name="placeholderText">
+      <string>Cost Price</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_salePrice">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>315</y>
+       <width>180</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>32</number>
+     </property>
+     <property name="placeholderText">
+      <string>Sale Price</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>147</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Company</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>288</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Cost Price</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Account</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>232</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Chassis</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>15</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Date</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>98</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Invoice</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>205</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Engine</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>315</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Sale Price</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>176</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Product</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_itemDiscountPercent">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>342</y>
+       <width>180</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Item Discount Percentage</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_itemDiscountAmount">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>370</y>
+       <width>180</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Item Discount Amount</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_addItem">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>450</y>
+       <width>100</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Add Item</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_totalPrice">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>398</y>
+       <width>180</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>32</number>
+     </property>
+     <property name="placeholderText">
+      <string>Item Total Price</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>398</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Total Price</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_18">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>342</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Discount %</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_19">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>370</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Discount Rs.</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_product">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>176</y>
+       <width>150</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_21">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>425</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Remarks</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_22">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>42</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>AC Type</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_accountType">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>42</y>
+       <width>150</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_quickAccount">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>42</y>
+       <width>30</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_23">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>122</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Type</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rb_new">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>122</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>New</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rb_used">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>122</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Used</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_date_24">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Reg</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_registration">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>260</y>
+       <width>180</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>32</number>
+     </property>
+     <property name="placeholderText">
+      <string>Registration Number</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_remarks">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>425</y>
+       <width>180</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>32</number>
+     </property>
+     <property name="placeholderText">
+      <string>Remarks</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_quickCompany">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>147</y>
+       <width>30</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_quickProduct">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>176</y>
+       <width>30</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCalendarWidget" name="calendar">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>280</width>
+       <height>183</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="firstDayOfWeek">
+      <enum>Qt::Sunday</enum>
+     </property>
+     <property name="gridVisible">
+      <bool>true</bool>
+     </property>
+     <property name="verticalHeaderFormat">
+      <enum>QCalendarWidget::NoVerticalHeader</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="purchaseGB">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>0</y>
+      <width>541</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>All Purchase</string>
+    </property>
+    <widget class="QTableWidget" name="tbl_purchase">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>55</y>
+       <width>520</width>
+       <height>420</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="rowCount">
+      <number>12</number>
+     </property>
+     <property name="columnCount">
+      <number>13</number>
+     </property>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+    </widget>
+    <widget class="QGroupBox" name="filterGB">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>15</y>
+       <width>521</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Filter</string>
+     </property>
+     <widget class="QLineEdit" name="le_filterByDate">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>15</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_filterByInvoice">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>15</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_filterByDiscount">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>15</y>
+        <width>65</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_refresh">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>10</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_filterByNetBill">
+      <property name="geometry">
+       <rect>
+        <x>235</x>
+        <y>15</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_filterByPayment">
+      <property name="geometry">
+       <rect>
+        <x>305</x>
+        <y>15</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_filterByBalance">
+      <property name="geometry">
+       <rect>
+        <x>375</x>
+        <y>15</y>
+        <width>45</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Filter </string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="cartGB">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>0</y>
+      <width>511</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Purchase Cart</string>
+    </property>
+    <widget class="QTableWidget" name="tbl_cart">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>15</y>
+       <width>500</width>
+       <height>465</height>
+      </rect>
+     </property>
+     <property name="tabKeyNavigation">
+      <bool>true</bool>
+     </property>
+     <property name="gridStyle">
+      <enum>Qt::SolidLine</enum>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="rowCount">
+      <number>14</number>
+     </property>
+     <property name="columnCount">
+      <number>12</number>
+     </property>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="cartBillGB">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>480</y>
+      <width>1351</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>CART BILL</string>
+    </property>
+    <widget class="QGroupBox" name="finalBillGB">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>10</y>
+       <width>491</width>
+       <height>190</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Calculation</string>
+     </property>
+     <widget class="QLineEdit" name="le_totalBill">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>35</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Bill Before Discount</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_billDiscountPercent">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Bill Discount Percentage</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_billDiscountAmount">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Bill Discount Amount</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_date_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>15</y>
+        <width>71</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Total Bill</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_date_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>81</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Discount %</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_date_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>81</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Discount Rs.</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_payment">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>80</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Paid Amount</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_balance">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>130</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Remaing Balance</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_netBill">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>35</y>
+        <width>150</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>32</number>
+      </property>
+      <property name="placeholderText">
+       <string>Bill After Discount</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_date_15">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>15</y>
+        <width>71</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Net Bill</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_date_16">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>60</y>
+        <width>81</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Payment</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_date_17">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>110</y>
+        <width>81</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>Balance</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_submit">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>160</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_cancel">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>160</y>
+        <width>100</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_">
+      <property name="geometry">
+       <rect>
+        <x>385</x>
+        <y>40</y>
+        <width>100</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Net</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_1">
+      <property name="geometry">
+       <rect>
+        <x>385</x>
+        <y>100</y>
+        <width>100</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Short Term</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_2">
+      <property name="geometry">
+       <rect>
+        <x>385</x>
+        <y>70</y>
+        <width>100</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Lease</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="lbl_date_20">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>51</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Invoice</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="planGB">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>10</y>
+       <width>535</width>
+       <height>190</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string> Plan</string>
+     </property>
+     <widget class="QTabWidget" name="tab_plan">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>15</y>
+        <width>531</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="lease">
+       <attribute name="title">
+        <string>Lease</string>
+       </attribute>
+       <widget class="QTableWidget" name="tbl_lease">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>0</y>
+          <width>515</width>
+          <height>140</height>
+         </rect>
+        </property>
+        <property name="rowCount">
+         <number>1</number>
+        </property>
+        <property name="columnCount">
+         <number>4</number>
+        </property>
+        <row/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="short_term">
+       <attribute name="title">
+        <string>Short Term</string>
+       </attribute>
+       <widget class="QTableWidget" name="tbl_shortTerm">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>0</y>
+          <width>515</width>
+          <height>140</height>
+         </rect>
+        </property>
+        <property name="rowCount">
+         <number>1</number>
+        </property>
+        <property name="columnCount">
+         <number>4</number>
+        </property>
+        <row/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_captureImage">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>650</y>
+      <width>100</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Capture</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_image">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>500</y>
+      <width>200</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Pictures/(1 of 2) a.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_browseImage">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>650</y>
+      <width>100</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

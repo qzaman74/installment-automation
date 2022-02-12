@@ -1,0 +1,1543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainForm</class>
+ <widget class="QMainWindow" name="mainForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1365</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OPTIM SOFTWARE SOLUTIONS -- AUTOiT</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lbl_dashboardImage">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1365</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_refresh">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>120</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/refreshIcon.png</normaloff>icon/refreshIcon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+    <property name="autoRaise">
+     <bool>false</bool>
+    </property>
+    <property name="arrowType">
+     <enum>Qt::NoArrow</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_quickPurchase">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>120</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Purchase</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/purchase.png</normaloff>icon/purchase.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+    <property name="autoRaise">
+     <bool>false</bool>
+    </property>
+    <property name="arrowType">
+     <enum>Qt::NoArrow</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_quickSale">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>120</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Sale</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/sale.png</normaloff>icon/sale.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+    <property name="autoRaise">
+     <bool>false</bool>
+    </property>
+    <property name="arrowType">
+     <enum>Qt::NoArrow</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_logout">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>120</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Logout</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/logout.png</normaloff>icon/logout.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+    <property name="autoRaise">
+     <bool>false</bool>
+    </property>
+    <property name="arrowType">
+     <enum>Qt::NoArrow</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_quickCash">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>120</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Cash</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/cash.png</normaloff>icon/cash.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+    <property name="autoRaise">
+     <bool>false</bool>
+    </property>
+    <property name="arrowType">
+     <enum>Qt::NoArrow</enum>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>15</y>
+      <width>1210</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Today</string>
+    </property>
+    <widget class="QToolButton" name="btn_todaySale">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>19</y>
+       <width>160</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Sale</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/sales-icon-12.png</normaloff>icon/sales-icon-12.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_todaySale">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>160</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_todayPurchase">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>171</y>
+       <width>160</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btn_todayPurchase">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>160</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Purchase</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/stacks-image-53cc5f9.png</normaloff>icon/stacks-image-53cc5f9.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btn_todayCashOut">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>21</y>
+       <width>160</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Cash Out</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/dc56ff07de4135d2edaf4b635a3e056a.png</normaloff>icon/dc56ff07de4135d2edaf4b635a3e056a.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_todayCashIn">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>171</y>
+       <width>160</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_todayCashOut">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>172</y>
+       <width>160</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btn_todayCashIn">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>20</y>
+       <width>160</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Cash In</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/purchase-order-03.png</normaloff>icon/purchase-order-03.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="gv_todayChart">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>5</y>
+       <width>300</width>
+       <height>205</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>230</y>
+      <width>1210</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Last Month</string>
+    </property>
+    <widget class="QLabel" name="lbl_monthlyCashIn">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>172</y>
+       <width>160</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btn_monthlyPurchase">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>21</y>
+       <width>160</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Purchase</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/stacks-image-53cc5f9.png</normaloff>icon/stacks-image-53cc5f9.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="gv_monthlyChart">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>6</y>
+       <width>300</width>
+       <height>205</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btn_monthlyCashOut">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>22</y>
+       <width>160</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Cash Out</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/dc56ff07de4135d2edaf4b635a3e056a.png</normaloff>icon/dc56ff07de4135d2edaf4b635a3e056a.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btn_monthlyCashIn">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>21</y>
+       <width>160</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Cash In</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/purchase-order-03.png</normaloff>icon/purchase-order-03.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_monthlySale">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>171</y>
+       <width>160</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_monthlyCashOut">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>173</y>
+       <width>160</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_monthlyPurchase">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>172</y>
+       <width>160</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btn_monthlySale">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>160</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Sale</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/sales-icon-12.png</normaloff>icon/sales-icon-12.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>450</y>
+      <width>1210</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Last Year</string>
+    </property>
+    <widget class="QLabel" name="lbl_yearlyCashIn">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>172</y>
+       <width>160</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btn_yearlyPurchase">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>21</y>
+       <width>160</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Purchase</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/stacks-image-53cc5f9.png</normaloff>icon/stacks-image-53cc5f9.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="gv_yearlyChart">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>6</y>
+       <width>300</width>
+       <height>205</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btn_yearlyCashOut">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>22</y>
+       <width>160</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Cash Out</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/dc56ff07de4135d2edaf4b635a3e056a.png</normaloff>icon/dc56ff07de4135d2edaf4b635a3e056a.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btn_yearlyCashIn">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>21</y>
+       <width>160</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Cash In</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/purchase-order-03.png</normaloff>icon/purchase-order-03.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_yearlySale">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>171</y>
+       <width>160</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_yearlyCashOut">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>173</y>
+       <width>160</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_yearlyPurchase">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>172</y>
+       <width>160</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="btn_yearlySale">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>160</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Sale</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/sales-icon-12.png</normaloff>icon/sales-icon-12.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>130</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+     <property name="arrowType">
+      <enum>Qt::NoArrow</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1365</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <property name="separatorsCollapsible">
+     <bool>false</bool>
+    </property>
+    <property name="toolTipsVisible">
+     <bool>false</bool>
+    </property>
+    <addaction name="actionEixt"/>
+   </widget>
+   <widget class="QMenu" name="menuPurchase">
+    <property name="title">
+     <string>Purchase</string>
+    </property>
+    <addaction name="actionNew_Purchase"/>
+   </widget>
+   <widget class="QMenu" name="menuInstallment_Plan">
+    <property name="title">
+     <string>Installment Plan</string>
+    </property>
+    <addaction name="actionAdd_Installment"/>
+    <addaction name="actionAssign_Scheme"/>
+    <addaction name="actionNew_Scheme"/>
+   </widget>
+   <widget class="QMenu" name="menuAccounts">
+    <property name="title">
+     <string>Accounts</string>
+    </property>
+    <addaction name="actionNew_Account"/>
+    <addaction name="actionCash_Transection"/>
+   </widget>
+   <widget class="QMenu" name="menuSetup">
+    <property name="title">
+     <string>Setup</string>
+    </property>
+    <addaction name="actionNew_Company"/>
+    <addaction name="actionNew_Product"/>
+   </widget>
+   <widget class="QMenu" name="menuReports">
+    <property name="title">
+     <string>Reports</string>
+    </property>
+    <widget class="QMenu" name="menuSale_Reports">
+     <property name="title">
+      <string>Sale Reports</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/reportIcon.png</normaloff>icon/reportIcon.png</iconset>
+     </property>
+     <addaction name="actionSale_Report_By_Date"/>
+     <addaction name="actionSale_Report_By_Invoice"/>
+    </widget>
+    <widget class="QMenu" name="menuPurchase_Reports">
+     <property name="title">
+      <string>Purchase Reports</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/reportIcon.png</normaloff>icon/reportIcon.png</iconset>
+     </property>
+     <addaction name="actionPurchase_Report_By_Date"/>
+     <addaction name="actionPurchase_Report_By_Invoice"/>
+    </widget>
+    <widget class="QMenu" name="menuAccounts_Reports">
+     <property name="title">
+      <string>Accounts Reports</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/reportIcon.png</normaloff>icon/reportIcon.png</iconset>
+     </property>
+     <addaction name="actionAccounts_Report_By_Receivable"/>
+     <addaction name="actionAccounts_Report_By_Payable"/>
+    </widget>
+    <widget class="QMenu" name="menuStock_Reports">
+     <property name="title">
+      <string>Stock Reports</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icon/reportIcon.png</normaloff>icon/reportIcon.png</iconset>
+     </property>
+     <addaction name="actionStock_Report_By_Level"/>
+    </widget>
+    <addaction name="menuSale_Reports"/>
+    <addaction name="menuPurchase_Reports"/>
+    <addaction name="menuAccounts_Reports"/>
+    <addaction name="menuStock_Reports"/>
+   </widget>
+   <widget class="QMenu" name="menuSale">
+    <property name="title">
+     <string>Sale</string>
+    </property>
+    <addaction name="actionNew_Sale"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSale"/>
+   <addaction name="menuPurchase"/>
+   <addaction name="menuInstallment_Plan"/>
+   <addaction name="menuAccounts"/>
+   <addaction name="menuSetup"/>
+   <addaction name="menuReports"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionAdd_Sale">
+   <property name="text">
+    <string>Add Sale</string>
+   </property>
+  </action>
+  <action name="actionAdd_Purchase">
+   <property name="text">
+    <string>Add Purchase</string>
+   </property>
+  </action>
+  <action name="actionAdd_Installment">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/addIcon.png</normaloff>icon/addIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Installment</string>
+   </property>
+  </action>
+  <action name="actionAssign_Scheme">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/assignmentIcon.png</normaloff>icon/assignmentIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Assign Scheme</string>
+   </property>
+  </action>
+  <action name="actionNew_Scheme">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/newIcon.png</normaloff>icon/newIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Scheme</string>
+   </property>
+  </action>
+  <action name="actionNew_Account">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/addAccountIcon.png</normaloff>icon/addAccountIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Account</string>
+   </property>
+  </action>
+  <action name="actionCash_Transection">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/cash.png</normaloff>icon/cash.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cash Transection</string>
+   </property>
+  </action>
+  <action name="actionAccount_To_Account">
+   <property name="text">
+    <string>Account To Account</string>
+   </property>
+  </action>
+  <action name="actionNew_Company">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/addIcon.png</normaloff>icon/addIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Company</string>
+   </property>
+  </action>
+  <action name="actionNew_Product">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/addIcon.png</normaloff>icon/addIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Product</string>
+   </property>
+  </action>
+  <action name="actionBy_Date">
+   <property name="text">
+    <string>By Date</string>
+   </property>
+  </action>
+  <action name="actionBy_Invoice">
+   <property name="text">
+    <string>By Invoice</string>
+   </property>
+  </action>
+  <action name="actionBy_Date_2">
+   <property name="text">
+    <string>By Date</string>
+   </property>
+  </action>
+  <action name="actionBy_Invoice_2">
+   <property name="text">
+    <string>By Invoice</string>
+   </property>
+  </action>
+  <action name="actionReceivable">
+   <property name="text">
+    <string>Receivable</string>
+   </property>
+  </action>
+  <action name="actionPayable">
+   <property name="text">
+    <string>Payable</string>
+   </property>
+  </action>
+  <action name="actionStock_Level">
+   <property name="text">
+    <string>Stock Level</string>
+   </property>
+  </action>
+  <action name="actionSale_Report_By_Date">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/calendarIcon.png</normaloff>icon/calendarIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>By Date</string>
+   </property>
+  </action>
+  <action name="actionSale_Report_By_Invoice">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/invoice.png</normaloff>icon/invoice.png</iconset>
+   </property>
+   <property name="text">
+    <string>By Invoice</string>
+   </property>
+  </action>
+  <action name="actionPurchase_Report_By_Date">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/calendarIcon.png</normaloff>icon/calendarIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>By Date</string>
+   </property>
+  </action>
+  <action name="actionPurchase_Report_By_Invoice">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/invoice.png</normaloff>icon/invoice.png</iconset>
+   </property>
+   <property name="text">
+    <string>By Invoice</string>
+   </property>
+  </action>
+  <action name="actionAccounts_Report_By_Receivable">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/cashFlowIcon.png</normaloff>icon/cashFlowIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Receivable</string>
+   </property>
+  </action>
+  <action name="actionAccounts_Report_By_Payable">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/accountIcon.png</normaloff>icon/accountIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Payable</string>
+   </property>
+  </action>
+  <action name="actionStock_Report_By_Level">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/reportIcon.png</normaloff>icon/reportIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stock Level</string>
+   </property>
+  </action>
+  <action name="actionEixt">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/exitIcon.png</normaloff>icon/exitIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Eixt</string>
+   </property>
+  </action>
+  <action name="actionNew_Sale">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/newIcon.png</normaloff>icon/newIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Sale</string>
+   </property>
+  </action>
+  <action name="actionNew_Purchase">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/newIcon.png</normaloff>icon/newIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Purchase</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
